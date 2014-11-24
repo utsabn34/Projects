@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0px;
+	padding:0px
+	font-family:Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	position:relative;
+	margin:0 auto;
+	width:400px;
+}
+/* Main Game  */
+.background {
+	width:400px;
+	height:600px;
+	position:absolute;
+	background-image:url(../images/background2.jpg);
+	background-repeat:repeat-y;
+	overflow:hidden;
+}
+.mycar {
+	width:100px;
+	height:100px;
+	position:absolute;
+	background-image:url(../images/car1.png);
+}
+.enemy-car {
+	width:100px;
+	height:100px;
+	position:absolute;
+	background-image:url(../images/opponent.png);
+}
+.bullets {
+	width:10px;
+	height:10px;
+	position:absolute;
+	background:white;
+}
+.explosion {
+	width:100px;
+	height:100px;
+	position:absolute;
+	background-image:url(../images/explosion.png);
+}
+.score {
+	background:#06F;
+	color:white;
+	top:10px;
+	left:10px;
+	position:absolute;
+	z-index:5;
+	width:100px;
+	line-height:20px;
+	text-align:center;
+}
+/* Game Over  */
+.game-over {
+	padding-top:100px;
+	z-index:10;
+	width:400px;
+	height:500px;
+	position:absolute;
+	background-image:url(../images/gameoverbackground.png);
+	display:none;
+	font-size:25px;
+	color:white;
+	text-align :center;
+	line-height:50px;
+}
+.gamelimit {
+	text-align :center;
+	color:blue;
+	width:auto;
+	font-size:36px;
+}
+.finalscore {
+	width:auto;
+	font-size:50px;
+	color:#0F0;
+}
+.feedback {
+	width:auto;
+	font-size:12px;
+}
+/* Homescreen  */
+
+.homescreen{
+	width:400px;
+	height:600px;
+	position:absolute;
+	background-image:url(../images/background.jpg);
+	z-index:20;
+	display:block;
+}
+.homescreen-button {
+	width:130px;
+	height:65px;
+	top:465px;
+	left:135px;
+	position:absolute;
+	background-image:url(../images/start.png);
+	font-size:50px;
+}
